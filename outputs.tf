@@ -7,16 +7,16 @@ output "vpc_id" {
 }
 
 
-output "public_subnets_cidr" {
+output "public_subnet_ids" {
   value = aws_subnet.public[*].id
 }
 
 
-output "private_subnets_cidr" {
+output "private_subnet_ids" {
   value = aws_subnet.private[*].id
 }
 
 
-output "database_subnets_cidr" {
+output "database_subnet_ids" {
   value = aws_subnet.database[*].id
 }
